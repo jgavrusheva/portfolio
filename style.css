@@ -1,0 +1,188 @@
+:root {
+    --base-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    color: var(--base-color);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p, a {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+img {
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(249, 248, 248, 0.4);
+    padding: 28px 0;
+}
+
+.menu__item a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.menu__item {
+    margin: 0 24px;
+}
+
+.header {
+    background: url('images/bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 628px;
+}
+
+.header__content {
+    padding-top: 100px;
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);    
+}
+
+.header__content h1 {
+    margin-bottom: 34px;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me-text {
+    padding: 116px 102px 61px 130px;
+}
+
+.about-me-text__content {
+    margin-top: 48px;
+    line-height: 1.9;
+}
+
+.skills {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.skills-list {
+    margin-top: 98px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list__item {
+    margin: 20px;
+}
+
+.my-portfolio {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.my-portfolio .carousel {
+    margin-top: 80px;
+}
+
+.contacts {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.contacts-links {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__link {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.contacts__link + .contacts__link {
+    margin-top: 24px;
+}
+
+.contacts-social {
+    margin-top: 30px;
+}
+
+.contacts-social__link {
+    display: inline-block;
+}
+
+.contacts-social__link + .contacts-social__link {
+    margin-left: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        background-position: right;
+    }
+
+    .header__content {
+        margin-left: 24px;
+    }
+
+    .menu__item {
+        margin: 0 12px;
+    }
+
+    .about-me {
+        flex-wrap: wrap;
+    }
+
+    .about-me-photo {
+        flex-grow: 1;
+        object-fit: fill;
+    }
+
+    .about-me-text__title {
+        text-align: center;
+    }
+
+    .skills-list__item {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .header__content {
+        padding-top: 10px;
+    }
+
+    .about-me-text {
+        padding: 80px 50px 0;
+    }
+}

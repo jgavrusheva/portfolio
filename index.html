@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Web дизайнер - Евгения Гаврушева</title>
+</head>
+<body>
+    <div class="header">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="#about-me">Обо мне</a>
+            </li>
+            <li class="menu__item">
+                <a href="#skills">Навыки</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">
+                    <img src="images/logo.svg" />
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#my-portfolio">Мои работы</a>
+            </li>
+            <li class="menu__item">
+                <a href="#contacts">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__content">
+            <h1>Jane Gavrusheva</h1>
+            <p>Приветствую вас на моем сайте-визитке, <br>я веб-дизайнер который любит создавать<br> что-то новое и необычное</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div id="about-me" class="about-me">
+            <img class="about-me-photo" src="images/foto.png" />
+            <div class="about-me-text">
+                <h2 class="about-me-text__title">
+                    Обо мне
+                </h2>
+                <p class="about-me-text__content">
+                    Я веб-дизайнер который хорошо понимает заказчика и выполняет все его требования и пожелания. При изготавлении сайта я никогда не использую готовые шаблоны, которых очень много на просторах интернета, я стараюсь создать новый шаблон сайта который будет уникален для клиента и прост в испольозовании пользователя.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="skills">
+        <h2>Навыки</h2>
+        <div class="skills-list">
+            <div class="skills-list__item">
+                <img src="images/figma.png" alt="" />
+            </div>
+            <div class="skills-list__item">
+                <img src="images/ai.png" alt="">
+            </div>
+            <div class="skills-list__item">
+                <img src="images/ps.png" alt="">
+            </div>
+            <div class="skills-list__item">
+                <img src="images/ae.png" alt="">
+            </div>
+            <div class="skills-list__item">
+                <img src="images/in.png" alt="">
+            </div>
+            <div class="skills-list__item">
+                <img src="images/5+3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="my-portfolio" class="my-portfolio">
+        <h2>Мои работы</h2>
+        <div class="carousel splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="carousel__slide splide__slide__container">
+                            <img src="images/prototipe.png"  alt=""/>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="carousel__slide splide__slide__container">
+                            <img src="images/prototipe.png"  alt=""/>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-links">
+            <a class="contacts__link" href="mailto:astashkina-1996@mail.ru">astashkina-1996@mail.ru</a>
+            <a class="contacts__link" href="tel:+79099099999">+7 900 909 99 99</a>
+        </div>
+        <div class="contacts-social">
+            <a class="contacts-social__link" href="https://instagram.com" rel="nofollow">
+                <img src="images/inst.png" alt="">
+            </a>
+            
+            <a class="contacts-social__link" href="https://vk.com" rel="nofollow">
+                <img src="images/vk.png" alt="">
+            </a>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' ).mount();
+        } );
+    </script>
+</body>
+</html>
