@@ -1,0 +1,32 @@
+.header {
+    background-position: right;
+}
+
+.header__content {
+    margin-left: 24px;
+}
+
+.menu {
+    justify-content: space-around;
+}
+
+.menu__item {
+    margin: 0 12px;
+}
+
+.about-me {
+    flex-wrap: wrap;
+}
+
+.about-me-photo {
+    flex-grow: 1;
+    object-fit: fill;
+}
+
+.about-me-text__title {
+    text-align: center;
+}
+
+.skills-list__item {
+    margin: 20px;
+}

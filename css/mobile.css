@@ -1,0 +1,56 @@
+body {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+h1, h2 {
+    font-size: 24px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu.active {
+    display: block;
+    right: 50%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.menu.active .menu__item {
+    margin-top: 12px;
+}
+
+.menu.active .menu__item_image {
+    display: none;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    padding: 24px 0;
+}
+
+.header-content {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.header-content h1 {
+    margin-bottom: 34px;
+    font-weight: bold;
+}
+
+.about-me-text {
+    padding: 80px 50px 0;
+}
+
+.splide__arrows {
+    display: none;
+}

@@ -1,0 +1,188 @@
+:root {
+    --base-color: #000000;
+    --font: 'Comfortaa', cursive;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--base-color);
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+header {
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+img {
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar__container {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(249, 248, 248, 0.4);
+    padding: 28px 0;
+    margin: 0;
+}
+
+.brand {
+    width: 82px;
+    height: 50px;
+    background: url('../images/logo.svg') no-repeat center;
+}
+
+.burger {
+    width: 24px;
+    height: 24px;
+    background: url('../images/burger-open.svg') no-repeat center;
+}
+
+.burger.active {
+    background: url('../images/burger-close.svg') no-repeat center;
+}
+
+.menu__item a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.menu__item {
+    margin: 0 24px;
+}
+
+.header {
+    background: url('../images/bg.jpg') center no-repeat;
+    background-size: cover;
+    height: 628px;
+}
+
+section > h2 {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.header-content {
+    padding-top: 100px;
+    padding-bottom: 148px;
+    padding-left: 104px;
+}
+
+.header-content h1 {
+    margin-bottom: 34px;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-me-text {
+    padding: 116px 102px 0 130px;
+}
+
+.about-me-text__content {
+    margin-top: 48px;
+    line-height: 1.9;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list__item {
+    margin: 20px;
+}
+
+.skills-list__item img {
+    width: 120px;
+}
+
+.carousel__slide img {
+    margin: 0 auto;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__link {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+.contacts__link + .contacts__link {
+    margin-top: 24px;
+}
+
+.contacts-social {
+    margin-top: 30px;
+}
+
+.contacts-social__link {
+    display: inline-block;
+}
+
+.contacts-social__link + .contacts-social__link {
+    margin-left: 16px;
+}
+
+.splide__arrow {
+    height: 126px;
+    width: 80px;
+    background: transparent;
+    border-radius: 0;
+}
+
+.splide__arrow svg {
+    height: 126px;
+    width: 80px;
+}
+
+.splide__pagination {
+    bottom: -50px;
+}
+
+.splide__pagination__page {
+    width: 36px;
+    height: 8px;
+    border-radius: 3px;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #121212;
+}
+
+.splide__pagination > li {
+    margin-left: 12px;
+}

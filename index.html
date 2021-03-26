@@ -5,113 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://unpkg.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="https://unpkg.com/modern-css-reset/dist/reset.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet" media="screen and (max-width: 1150px)">
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 468px)">
     <title>Web дизайнер - Евгения Гаврушева</title>
 </head>
 <body>
-    <div class="header">
-        <ul class="menu">
-            <li class="menu__item">
-                <a href="#about-me">Обо мне</a>
-            </li>
-            <li class="menu__item">
-                <a href="#skills">Навыки</a>
-            </li>
-            <li class="menu__item">
-                <a href="#">
-                    <img src="images/logo.svg" />
-                </a>
-            </li>
-            <li class="menu__item">
-                <a href="#my-portfolio">Мои работы</a>
-            </li>
-            <li class="menu__item">
-                <a href="#contacts">Контакты</a>
-            </li>
-        </ul>
-        <div class="header__content">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div id="brand" class="brand"></div>
+                <div id="burger" class="burger"></div>
+            </div>
+            <ul id="menu" class="menu">
+                <li class="menu__item">
+                    <a href="#about-me">Обо мне</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#skills">Навыки</a>
+                </li>
+                <li class="menu__item menu__item_image">
+                    <a href="#">
+                        <img src="images/logo.svg" />
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#my-portfolio">Мои работы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-content container">
             <h1>Jane Gavrusheva</h1>
-            <p>Приветствую вас на моем сайте-визитке, <br>я веб-дизайнер который любит создавать<br> что-то новое и необычное</h3>
+            <p>Приветствую вас на моем сайте-визитке, <br>я веб-дизайнер который любит создавать<br> что-то новое и необычное</p>
         </div>
-    </div>
-    <div class="container">
-        <div id="about-me" class="about-me">
-            <img class="about-me-photo" src="images/foto.png" />
-            <div class="about-me-text">
-                <h2 class="about-me-text__title">
-                    Обо мне
-                </h2>
-                <p class="about-me-text__content">
-                    Я веб-дизайнер который хорошо понимает заказчика и выполняет все его требования и пожелания. При изготавлении сайта я никогда не использую готовые шаблоны, которых очень много на просторах интернета, я стараюсь создать новый шаблон сайта который будет уникален для клиента и прост в испольозовании пользователя.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div id="skills" class="skills">
-        <h2>Навыки</h2>
-        <div class="skills-list">
-            <div class="skills-list__item">
-                <img src="images/figma.png" alt="" />
-            </div>
-            <div class="skills-list__item">
-                <img src="images/ai.png" alt="">
-            </div>
-            <div class="skills-list__item">
-                <img src="images/ps.png" alt="">
-            </div>
-            <div class="skills-list__item">
-                <img src="images/ae.png" alt="">
-            </div>
-            <div class="skills-list__item">
-                <img src="images/in.png" alt="">
-            </div>
-            <div class="skills-list__item">
-                <img src="images/5+3.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div id="my-portfolio" class="my-portfolio">
-        <h2>Мои работы</h2>
-        <div class="carousel splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <div class="carousel__slide splide__slide__container">
-                            <img src="images/prototipe.png"  alt=""/>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="carousel__slide splide__slide__container">
-                            <img src="images/prototipe.png"  alt=""/>
-                        </div>
-                    </li>
+    </header>
+    <main>
+        <section id="about-me" class="container">
+            <div class="about-me">
+                <img class="about-me-photo" src="images/foto.png" />
+                <div class="about-me-text">
+                    <h2 class="about-me-text__title">
+                        Обо мне
+                    </h2>
+                    <p class="about-me-text__content">
+                        Я веб-дизайнер который хорошо понимает заказчика и выполняет все его требования и пожелания. При изготавлении сайта я никогда не использую готовые шаблоны, которых очень много на просторах интернета, я стараюсь создать новый шаблон сайта который будет уникален для клиента и прост в испольозовании пользователя.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="contacts" class="contacts">
-        <h2>Контакты</h2>
-        <div class="contacts-links">
-            <a class="contacts__link" href="mailto:astashkina-1996@mail.ru">astashkina-1996@mail.ru</a>
-            <a class="contacts__link" href="tel:+79099099999">+7 900 909 99 99</a>
-        </div>
-        <div class="contacts-social">
-            <a class="contacts-social__link" href="https://instagram.com" rel="nofollow">
-                <img src="images/inst.png" alt="">
-            </a>
-            
-            <a class="contacts-social__link" href="https://vk.com" rel="nofollow">
-                <img src="images/vk.png" alt="">
-            </a>
-        </div>
-    </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Навыки</h2>
+            <div class="skills-list">
+                <div class="skills-list__item">
+                    <img src="images/figma.png" alt="" />
+                </div>
+                <div class="skills-list__item">
+                    <img src="images/ai.png" alt="">
+                </div>
+                <div class="skills-list__item">
+                    <img src="images/ps.png" alt="">
+                </div>
+                <div class="skills-list__item">
+                    <img src="images/ae.png" alt="">
+                </div>
+                <div class="skills-list__item">
+                    <img src="images/in.png" alt="">
+                </div>
+                <div class="skills-list__item">
+                    <img src="images/5+3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="my-portfolio" class="container">
+            <h2>Мои работы</h2>
+            <div class="carousel splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <svg width="80" height="126" viewBox="0 0 80 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1548 96.3561C31.5039 95.331 31.5039 93.669 32.1548 92.6438L50.9763 63L32.1548 33.3562C31.5039 32.331 31.5039 30.669 32.1548 29.6438C32.8057 28.6187 33.861 28.6187 34.5118 29.6438L54.5118 61.1438C55.1627 62.169 55.1627 63.831 54.5118 64.8562L34.5118 96.3561C33.861 97.3813 32.8057 97.3813 32.1548 96.3561Z" fill="#121212"/>
+                        </svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <svg width="80" height="126" viewBox="0 0 80 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1548 96.3561C31.5039 95.331 31.5039 93.669 32.1548 92.6438L50.9763 63L32.1548 33.3562C31.5039 32.331 31.5039 30.669 32.1548 29.6438C32.8057 28.6187 33.861 28.6187 34.5118 29.6438L54.5118 61.1438C55.1627 62.169 55.1627 63.831 54.5118 64.8562L34.5118 96.3561C33.861 97.3813 32.8057 97.3813 32.1548 96.3561Z" fill="#121212"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="carousel__slide splide__slide__container">
+                                <img src="images/prototipe.png"  alt=""/>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="carousel__slide splide__slide__container">
+                                <img src="images/prototipe.png"  alt=""/>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="container">
+            <h2>Контакты</h2>
+            <div class="contacts">
+                <div class="contacts-links">
+                    <a class="contacts__link" href="mailto:astashkina-1996@mail.ru">astashkina-1996@mail.ru</a>
+                    <a class="contacts__link" href="tel:+79099099999">+7 900 909 99 99</a>
+                </div>
+                <div class="contacts-social">
+                    <a class="contacts-social__link" href="https://instagram.com" rel="nofollow">
+                        <img src="images/inst.png" alt="">
+                    </a>
+                    
+                    <a class="contacts-social__link" href="https://vk.com" rel="nofollow">
+                        <img src="images/vk.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '.splide' ).mount();
+            const carousel = new Splide('.splide');
+            carousel.mount();
         } );
+
+        const burgerMenu = document.getElementById("burger");
+        const navbarMenu = document.getElementById("menu");
+        const menuItems = document.querySelectorAll('.menu__item');
+
+        function toggleMenu() {
+            navbarMenu.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+        }
+
+        burgerMenu.addEventListener("click", () => toggleMenu());
+
+        menuItems.forEach((item) => {
+            item.addEventListener('click', () => toggleMenu());
+        });
     </script>
 </body>
 </html>
